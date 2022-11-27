@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
+import { TransactionHistoryColumn } from '../style/TransactionHictory.styled';
 
 export const TransactionHistoryItem = ({
   item: { type, amount, currency },
 }) => {
   return (
     <>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <TransactionHistoryColumn>{type}</TransactionHistoryColumn>
+      <TransactionHistoryColumn>{amount}</TransactionHistoryColumn>
+      <TransactionHistoryColumn>{currency}</TransactionHistoryColumn>
     </>
   );
 };
