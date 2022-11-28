@@ -1,15 +1,15 @@
-import { Profile } from './Profile';
-import { Statistics } from './Statistics';
-import { FriendList } from './FriendList';
-import { TransactionHistory } from './TransactionHistory';
-import { StatisticsContainer } from 'style/Statistics.styled';
-import { ProfileContainer } from 'style/Profile.styled';
-import { FriendContainer } from 'style/FriendList.styled';
-import { TransactionHictoryContainer } from '../style/TransactionHictory.styled';
-import user from 'user.json';
-import data from 'data.json';
-import friends from 'friends.json';
-import transactions from 'transactions.json';
+import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendsList/FriendList';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { StatisticsContainer } from 'components/Statistics/Statistics.styled';
+import { ProfileContainer } from 'components/Profile/Profile.styled';
+import { FriendContainer } from 'components/FriendsList/FriendList.styled';
+import { TransactionHictoryContainer } from './TransactionHistory/TransactionHictory.styled';
+import user from '../data/user.json';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
 import { GlobalStyle, Container } from 'style/Global.styled';
 
 export const App = () => {

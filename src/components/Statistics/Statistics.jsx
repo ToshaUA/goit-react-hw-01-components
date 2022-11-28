@@ -4,7 +4,7 @@ import {
   StatList,
   StatisticsData,
   StatisticsValue,
-} from '../style/Statistics.styled';
+} from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -22,11 +22,13 @@ export const Statistics = ({ title, stats }) => {
   );
 };
 
-Statistics.protoTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
-  }),
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };

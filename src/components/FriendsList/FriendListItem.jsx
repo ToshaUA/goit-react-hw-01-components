@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Position, FriendName } from '../style/FriendListItem.styled';
+import { Position, FriendName } from './FriendListItem.styled';
 
 export const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
   return (
